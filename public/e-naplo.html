@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petőfi Sándor Általános Iskola | e-napló</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./iskola.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">🏫</div>
+          <div class="nav-logo-text">
+            <strong>Petőfi Sándor</strong>
+            <span>Általános Iskola · Sopron</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-cta">Kezdőlap</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <form id="student-form">
+      <div class="form-row">
+        <div class="form-group">
+          <h2>Diák hozzáadása:</h2>
+          <label for="name">Tanuló neve:</label>
+          <input type="text" id="studentName" placeholder="Név" />
+          <label for="class">Tanló osztálya:</label>
+          <input
+            type="text"
+            id="studentClass"
+            placeholder="Osztály (pl. 11.c)"
+          />
+        </div>
+
+        <button class="form-submit">Mentés</button>
+      </div>
+    </form>
+
+    <form id="content-form">
+      <h2>Új hír létrehozása</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="title">Cím:</label>
+          <input id="title" placeholder="Cím" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Tartalom:</label>
+          <textarea id="content" placeholder="Tartalom"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Bejegyzés létrehozás</button>
+      </div>
+    </form>
+
+    <hr />
+
+    <h2 id="news-title">Hírek kezelése:</h2>
+    <div id="newsContainer"></div>
+
+    <!-- DELETE MODAL -->
+    <div id="deleteModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Biztos törlöd?</h3>
+        <p>Ez a művelet nem visszavonható.</p>
+        <button onclick="confirmDelete()" class="modal-btn">Igen</button>
+        <button onclick="closeModal('deleteModal')" class="modal-btn">
+          Mégse
+        </button>
+      </div>
+    </div>
+
+    <!-- EDIT MODAL -->
+    <div id="editModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Hír szerkesztése</h3>
+        <input type="text" id="editTitle" placeholder="Cím" />
+        <textarea id="editContent" placeholder="Tartalom"></textarea>
+        <button onclick="confirmEdit()" class="modal-btn">Mentés</button>
+        <button onclick="closeModal('editModal')" class="modal-btn">
+          Mégse
+        </button>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Üzenetek:</h2>
+
+    <div id="messagesContainer"></div>
+
+    <!-- Delete Modal -->
+    <div id="deleteMessageModal" class="hidden">
+      <h1>Biztos törölni akarod az üzenetet?</h1>
+      <button onclick="confirmDeleteMessage()"  class="modal-btn" >Igen, törlés</button>
+      <button onclick="closeModal('deleteMessageModal')" class="modal-btn" >Mégse</button>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editMessageModal" class="hidden">
+      <div class="modal-content">
+        <label>Név</label>
+        <input type="text" id="editMessageName" />
+        <label>Üzenet</label>
+        <textarea id="editMessageContent"></textarea>
+        <button onclick="confirmEditMessage()" class="modal-btn">Mentés</button>
+        <button onclick="closeModal('editMessageModal')" class="modal-btn">
+          Mégse
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🏫</div>
+            <strong>Petőfi Sándor Általános Iskola</strong>
+          </div>
+          <p>
+            Sopron egyik vezető általános iskolája, ahol a minőségi oktatás és a
+            szeretetteljes közösség kéz a kézben jár 1952 óta.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigáció</h5>
+          <ul>
+            <li><a href="#hirek">Hírek</a></li>
+            <li><a href="#esemenyek">Események</a></li>
+            <li><a href="#ugyintezas">Ügyintézés</a></li>
+            <li><a href="#kapcsolat">Kapcsolat</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Dokumentumok</h5>
+          <ul>
+            <li><a href="#">Házirend</a></li>
+            <li><a href="#">Pedagógiai program</a></li>
+            <li><a href="#">SZMSZ</a></li>
+            <li><a href="#">Adatvédelem</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Gyorslinkek</h5>
+          <ul>
+            <li><a href="#">E-Napló (Kréta)</a></li>
+            <li><a href="#">Órarend letöltés</a></li>
+            <li><a href="#">Étlap</a></li>
+            <li><a href="#">Beiratkozás</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© 2025 Petőfi Sándor Általános Iskola, Sopron. Minden jog
+          fenntartva.</span
+        >
+        <span>OM azonosító: 102345</span>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

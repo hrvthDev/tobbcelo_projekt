@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./iskola.css" />
+    <title>Petőfi Sándor Általános Iskola | Tanulók</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon">🏫</div>
+          <div class="nav-logo-text">
+            <strong>Petőfi Sándor</strong>
+            <span>Általános Iskola · Sopron</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="e-naplo.html" class="nav-cta">E-Napló</a></li>
+          <li><a href="index.html" class="nav-cta">Kezdőlap</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div id="studentsContainer"></div>
+    </section>
+
+    <section>
+      <div id="upload-section" class="contact-form">
+        <h2 class="form-title">📄 Dokumentum feltöltése</h2>
+        <p
+          style="
+            text-align: center;
+            color: var(--ink-muted);
+            margin-bottom: 20px;
+          "
+        >
+          Szeretnél feltölteni egy dokumentumot az iskolának?
+        </p>
+
+        <div class="form-group">
+          <label>Milyen típusú fájlt töltesz fel?</label>
+          <select id="fileType">
+            <option value="igazolas">Igazolás</option>
+            <option value="kerelme">Kérelem</option>
+            <option value="egyeb">Egyéb dokumentum</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Fájl kiválasztása</label>
+          <input type="file" id="fileInput" />
+        </div>
+
+        <button class="form-submit" onclick="uploadFile()">Feltöltés</button>
+
+        <p id="uploadResult" style="text-align: center; margin-top: 15px"></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🏫</div>
+            <strong>Petőfi Sándor Általános Iskola</strong>
+          </div>
+          <p>
+            Sopron egyik vezető általános iskolája, ahol a minőségi oktatás és a
+            szeretetteljes közösség kéz a kézben jár 1952 óta.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigáció</h5>
+          <ul>
+            <li><a href="#hirek">Hírek</a></li>
+            <li><a href="#esemenyek">Események</a></li>
+            <li><a href="#ugyintezas">Ügyintézés</a></li>
+            <li><a href="#kapcsolat">Kapcsolat</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Dokumentumok</h5>
+          <ul>
+            <li><a href="#">Házirend</a></li>
+            <li><a href="#">Pedagógiai program</a></li>
+            <li><a href="#">SZMSZ</a></li>
+            <li><a href="#">Adatvédelem</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Gyorslinkek</h5>
+          <ul>
+            <li><a href="#">E-Napló (Kréta)</a></li>
+            <li><a href="#">Órarend letöltés</a></li>
+            <li><a href="#">Étlap</a></li>
+            <li><a href="#">Beiratkozás</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© 2025 Petőfi Sándor Általános Iskola, Sopron. Minden jog
+          fenntartva.</span
+        >
+        <span>OM azonosító: 102345</span>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

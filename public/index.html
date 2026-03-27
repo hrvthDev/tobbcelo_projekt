@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petőfi Sándor Általános Iskola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./iskola.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">🏫</div>
+      <div class="nav-logo-text">
+        <strong>Petőfi Sándor</strong>
+        <span>Általános Iskola · Sopron</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hirek">Hírek</a></li>
+      <li><a href="#esemenyek">Események</a></li>
+      <li><a href="#ugyintezas">Ügyintézés</a></li>
+      <li><a href="#kapcsolat">Kapcsolat</a></li>
+      <li><a href="students.html">Tanulóink</a></li>
+      <li><a href="login.html" class="nav-cta">Bejelentkezés</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">2026/2027-es tanév</div>
+      <h1>Ahol a tudás <em>otthonra</em> talál</h1>
+      <p class="hero-sub">Köszöntjük az iskola honlapján! Nálunk minden gyermek egyedi tehetség — célunk a tudás, a közösség és az örömteli fejlődés összekapcsolása.</p>
+      <div class="hero-btns">
+        <a href="#ugyintezas" class="btn-primary">Ügyintézés</a>
+        <a href="#hirek" class="btn-outline">Legújabb hírek</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">24</span>
+          <span class="stat-label">osztály</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">580</span>
+          <span class="stat-label">tanuló</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">62</span>
+          <span class="stat-label">pedagógus</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-badge">
+        <span>🏆 Top 10</span>
+        Győr-Moson-Sopron megye
+      </div>
+      <div class="hero-card-main">
+        <div class="hero-card-top">
+          <p>Ma · 2025. március 17., hétfő</p>
+          <h3>Mai órarend — 3/B</h3>
+          <div class="mini-schedule">
+            <div class="mini-row">
+              <span>🔢 Matematika</span>
+              <span class="mini-row-time">8:00–8:45</span>
+            </div>
+            <div class="mini-row">
+              <span>📖 Magyar irodalom</span>
+              <span class="mini-row-time">8:55–9:40</span>
+            </div>
+            <div class="mini-row">
+              <span>🌍 Természetismeret</span>
+              <span class="mini-row-time">9:50–10:35</span>
+            </div>
+            <div class="mini-row">
+              <span>🎨 Rajz</span>
+              <span class="mini-row-time">10:55–11:40</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card-bottom">
+          <h4>Friss hírek</h4>
+          <div class="mini-news">
+            <div class="mini-news-item">
+              <div class="mini-dot" style="background:#C85C2A"></div>
+              <p>Tavaszi szünet: március 31 – április 14.</p>
+            </div>
+            <div class="mini-news-item">
+              <div class="mini-dot" style="background:#3A7D44"></div>
+              <p>Felvételi tájékoztató szülőknek — ápr. 3.</p>
+            </div>
+            <div class="mini-news-item">
+              <div class="mini-dot" style="background:#D4820A"></div>
+              <p>Iskolai kirándulás Fertőd – ápr. 22.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hirek">
+  <div class="section-inner">
+    <div class="section-label">Legújabb hírek</div>
+    <h2>Mi történik az iskolában?</h2>
+    <p class="section-intro">Kövesse figyelemmel az iskola életét — versenyeredmények, rendezvények, fontos értesítők egy helyen.</p>
+   
+    <div id="newsContainer">
+
+    </div>
+
+  </div>
+</section>
+
+<section id="esemenyek">
+  <div class="section-inner">
+    <div class="section-label">Eseménynaptár</div>
+    <h2>Közelgő programok</h2>
+    <p class="section-intro">Ne maradjon le semmilyen iskolai eseményről — kirándulások, szülői értekezletek, ünnepségek.</p>
+    <div class="events-layout">
+      <div class="events-list">
+        <div class="event-item">
+          <div class="event-date-box ev-terra">
+            <span class="month">Márc</span>
+            <span class="day">22</span>
+          </div>
+          <div class="event-info">
+            <h4>Szülői értekezlet — 1–4. osztály</h4>
+            <p>Féléves értékelés és a tavaszi időszak tervei. Minden szülőt szeretettel várunk!</p>
+            <div class="event-meta">
+              <span>🕕 17:00–18:30</span>
+              <span>📍 Tornaterem</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-box ev-green">
+            <span class="month">Márc</span>
+            <span class="day">31</span>
+          </div>
+          <div class="event-info">
+            <h4>Tavaszi szünet kezdete</h4>
+            <p>Március 31-től április 14-ig szünet. Tartsák szem előtt az ügyeleti napokat!</p>
+            <div class="event-meta">
+              <span>🌸 2 hetes szünet</span>
+              <span>📍 Egész iskola</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-box ev-amber">
+            <span class="month">Ápr</span>
+            <span class="day">7</span>
+          </div>
+          <div class="event-info">
+            <h4>Beiratkozás az 1. osztályba</h4>
+            <p>Első osztályos beiratkozás. Hozza el a szükséges dokumentumokat (TAJ, lakcímkártya).</p>
+            <div class="event-meta">
+              <span>🕗 8:00–16:00</span>
+              <span>📍 Igazgatói iroda</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-box ev-terra">
+            <span class="month">Ápr</span>
+            <span class="day">22</span>
+          </div>
+          <div class="event-info">
+            <h4>Iskolai kirándulás — Fertőd, Esterházy-kastély</h4>
+            <p>5–8. osztályosok számára szervezett egész napos kirándulás. Részvételi díj: 3500 Ft.</p>
+            <div class="event-meta">
+              <span>🕖 7:30 indulás</span>
+              <span>📍 Iskolabusz</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-box ev-green">
+            <span class="month">Máj</span>
+            <span class="day">10</span>
+          </div>
+          <div class="event-info">
+            <h4>Anyák napja — Ünnepi műsor</h4>
+            <p>Édesanyákat köszöntő ünnepség az iskola udvarán, diákok előadásával.</p>
+            <div class="event-meta">
+              <span>🕕 10:00</span>
+              <span>📍 Iskola udvara</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      
+</section>
+
+<!-- ÜGYINTÉZÉS -->
+<section id="ugyintezas">
+  <div class="section-inner">
+    <div class="section-label">Ügyintézés</div>
+    <h2>Intézzen mindent online</h2>
+    <p class="section-intro">Az iskolai adminisztráció egyszerűsített — legfontosabb teendőit pár kattintással intézheti el.</p>
+    <div class="services-grid">
+      <a href="students.html" class="service-card">
+        <div class="service-icon" style="background:#FEF3DC;">📝</div>
+        <h3>Igazolások igénylése</h3>
+        <p>Iskolalátogatási igazolás, diákigazolvány ügyintézés, tanulmányi igazolás kérése.</p>
+        <div class="service-badge">Online elérhető</div>
+        <div class="service-card-footer">Megnézem</div>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-icon" style="background:#E8F5EA;">📊</div>
+        <h3>E-Napló belépés</h3>
+        <p>Jegyek, hiányzások és házi feladatok megtekintése a Kréta elektronikus naplóban.</p>
+        <div class="service-badge">Kréta rendszer</div>
+        <div class="service-card-footer">Belépés</div>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-icon" style="background:#FAEADE;">🗓️</div>
+        <h3>Órarend letöltése</h3>
+        <p>Aktuális órarendek osztályonként, PDF formátumban letölthető és nyomtatható.</p>
+        <div class="service-card-footer">Letöltés</div>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-icon" style="background:#FEF3DC;">📋</div>
+        <h3>Étkezési nyilvántartás</h3>
+        <p>Menzabejelentkezés, lemondás és az étlap megtekintése a következő hétre.</p>
+        <div class="service-badge">Online elérhető</div>
+        <div class="service-card-footer">Kezelés</div>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-icon" style="background:#E8F5EA;">🚌</div>
+        <h3>Iskolabusz menetrend</h3>
+        <p>Naprakész menetrend, megállóhelyek és esetleges változások egy helyen.</p>
+        <div class="service-card-footer">Megnézem</div>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-icon" style="background:#FAEADE;">📞</div>
+        <h3>Szülői fogadóóra</h3>
+        <p>Időpont foglalás pedagógusainkhoz — online naptár alapján, rugalmasan.</p>
+        <div class="service-badge">Időpontfoglalás</div>
+        <div class="service-card-footer">Foglalás</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- KAPCSOLAT -->
+<section id="kapcsolat">
+  <div class="section-inner">
+    <div class="section-label">Kapcsolat</div>
+    <h2>Vegye fel velünk a kapcsolatot</h2>
+    <p class="section-intro">Kérdése van? Szívesen segítünk — forduljon hozzánk bizalommal személyesen, telefonon vagy e-mailben.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-block">
+          <div class="contact-icon" style="background:var(--terra-pale);">📍</div>
+          <div>
+            <h4>Cím</h4>
+            <p>9400 Sopron, Petőfi utca 12.<br>Győr-Moson-Sopron megye</p>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-icon" style="background:var(--green-light);">📞</div>
+          <div>
+            <h4>Telefonszám</h4>
+            <p><a href="tel:+3699999999">+36 99 999-999</a> (titkárság)<br>
+               <a href="tel:+3699999998">+36 99 999-998</a> (igazgató)</p>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-icon" style="background:var(--amber-pale);">✉️</div>
+          <div>
+            <h4>E-mail</h4>
+            <p><a href="mailto:info@petofi-sopron.hu">info@petofi-sopron.hu</a><br>
+               <a href="mailto:igazgato@petofi-sopron.hu">igazgato@petofi-sopron.hu</a></p>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-icon" style="background:var(--terra-pale);">🕐</div>
+          <div>
+            <h4>Nyitvatartás</h4>
+            <p>Hétfő–Péntek: 7:30–16:30<br>
+               Ügyintézés: 8:00–15:00</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <h3>Írjon nekünk!</h3>
+        <p>24 órán belül válaszolunk minden megkeresésre.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Neve</label>
+            <input type="text" id="name" placeholder="Kovács János" required>
+          </div>
+          <div class="form-group">
+            <label>E-mail cím</label>
+            <input type="email" id="email" placeholder="pelda@email.hu" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Üzenet</label>
+          <textarea  id="message" placeholder="Írja le kérdését vagy megjegyzését..." required></textarea>
+        </div>
+        <button class="form-submit">Üzenet elküldése ✉️</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">
+        <div class="footer-logo-icon">🏫</div>
+        <strong>Petőfi Sándor Általános Iskola</strong>
+      </div>
+      <p>Sopron egyik vezető általános iskolája, ahol a minőségi oktatás és a szeretetteljes közösség kéz a kézben jár 1952 óta.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigáció</h5>
+      <ul>
+        <li><a href="#hirek">Hírek</a></li>
+        <li><a href="#esemenyek">Események</a></li>
+        <li><a href="#ugyintezas">Ügyintézés</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Dokumentumok</h5>
+      <ul>
+        <li><a href="#">Házirend</a></li>
+        <li><a href="#">Pedagógiai program</a></li>
+        <li><a href="#">SZMSZ</a></li>
+        <li><a href="#">Adatvédelem</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Gyorslinkek</h5>
+      <ul>
+        <li><a href="#">E-Napló (Kréta)</a></li>
+        <li><a href="#">Órarend letöltés</a></li>
+        <li><a href="#">Étlap</a></li>
+        <li><a href="#">Beiratkozás</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Petőfi Sándor Általános Iskola, Sopron. Minden jog fenntartva.</span>
+    <span>OM azonosító: 102345</span>
+  </div>
+</footer>
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>
