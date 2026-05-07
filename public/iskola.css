@@ -602,6 +602,7 @@ h2 {
 
 .form-row {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 14px;
 }
@@ -629,7 +630,7 @@ h2 {
 }
 .form-group textarea { resize: vertical; min-height: 100px; }
 .form-submit {
-  width: 100%;
+  width: 250px;
   background: var(--terracotta);
   color: var(--white);
   font-family: 'DM Sans', sans-serif;
@@ -841,4 +842,17 @@ input, textarea {
   flex-direction: column;
   padding: 20px;
   text-align: center;
+}
+
+input{
+  width: 500px !important;
+}
+
+#content{
+  width: 500px;
+  height: 250px;
+}
+
+#news-title{
+  
 }
