@@ -608,7 +608,9 @@ h2 {
 }
 
 .form-group { 
-  display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; 
+  display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; align-items: center;
+
+
 }
 .form-group label {
   font-size: 13px; font-weight: 600; color: var(--ink-mid);
@@ -639,6 +641,8 @@ h2 {
   border-radius: 10px; border: none; cursor: pointer;
   transition: background .15s, transform .15s;
   margin-top: 4px;
+  display: block;
+  margin: auto;
 }
 .form-submit:hover { background: #A84920; transform: translateY(-1px); }
 
@@ -853,6 +857,6 @@ input{
   height: 250px;
 }
 
-#news-title{
-  
+#fileType{
+  width: 250px;
 }

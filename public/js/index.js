@@ -20,7 +20,11 @@ function createNews() {
 
       const data = await reponse.json();
 
+
+      alert("Sikeresen létrehoztad!")
       console.log("Sikeresen létrehoztad a bejegyzést!", data.title)
+
+
 
     }
 
